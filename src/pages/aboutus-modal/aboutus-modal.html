@@ -1,0 +1,19 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>{{'Aboutus Modal' | translate}}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div class="main-modal">
+        <div class="modal-box">
+            <h1>{{'Rallison Wire' | translate}}</h1>
+            <h2>{{'Your request to access the Rallison Wire is under review. You will be able to log in as soon as the overseeing admin acknowledges your application.' | translate}}</h2>
+            <p>{{'Meanwhile, you can contact us' | translate}} <a href="tel:011-42015577">011-42015577</a> {{'or mail us' | translate}} <span> <a href="mailto:marketing@rallison.com">marketing@rallison.com</a>
+            </span> {{'if you any question' | translate}}.</p>
+            <div class="modal-cls" (click)="gotoHomePage()">
+                <i class="material-icons">cancel</i>
+            </div>
+        </div>
+    </div>
+</ion-content>
