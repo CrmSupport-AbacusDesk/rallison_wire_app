@@ -114,12 +114,12 @@ export class CancelpolicyModalPage {
                 return
             }
         }
-        // else if(this.redeemType == 'Cash'){
-        //     if(!this.data.account_holder_name  || !this.data.bank_name || !this.data.account_no || !this.data.ifsc_code){
-        //         this.showAlert("Bank details are missing");
-        //         return;
-        //     }
-        // }
+        else if(this.redeemType == 'Cash'){
+            if(!this.data.account_holder_name  || !this.data.bank_name || !this.data.account_no || !this.data.ifsc_code){
+                this.showAlert("Bank details are missing");
+                return;
+            }
+        }
         if(!this.data.check){
             this.showAlert("Read cancelation policy");
             return
